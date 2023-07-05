@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.YEcom" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <style name="Theme.YEcom_noactionbar" parent="Theme.AppCompat.Light.NoActionBar" />
+</resources>
