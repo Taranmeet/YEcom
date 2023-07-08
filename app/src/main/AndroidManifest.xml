@@ -15,12 +15,17 @@
         <activity
             android:name=".splash.SplashActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.YEcom_noactionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".login.LoginActivity"
+            android:theme="@style/Theme.YEcom_noactionbar"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="true"
