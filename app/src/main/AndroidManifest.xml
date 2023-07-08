@@ -13,7 +13,7 @@
         android:theme="@style/Theme.YEcom"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".splash.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.YEcom_noactionbar">
             <intent-filter>

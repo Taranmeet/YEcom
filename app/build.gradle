@@ -58,6 +58,7 @@ dependencies {
     implementation libs.material3
     implementation libs.androidx.constraintlayout
     implementation libs.androidx.appcompat
+    implementation project(path: ':base')
     testImplementation libs.junit
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.espresso.core
