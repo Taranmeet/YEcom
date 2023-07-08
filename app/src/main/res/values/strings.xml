@@ -3,4 +3,7 @@
     <string name="ecommerce">Ecommerce</string>
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>
