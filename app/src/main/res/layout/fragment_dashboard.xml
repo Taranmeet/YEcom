@@ -4,15 +4,10 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_7dp">
 
-        <TextView
-            android:id="@+id/tv_text"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:text="This is a sample dahsboard fragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <include layout="@layout/item_dashboard"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
