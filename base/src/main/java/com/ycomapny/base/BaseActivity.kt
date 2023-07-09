@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.databinding.ViewDataBinding
+import androidx.fragment.app.Fragment
+
 /**
  * @description - Base class for activity. This will contain common code for all activities.
  * @author Taranmeet Singh
@@ -30,8 +32,22 @@ abstract class BaseActivity<VM : BaseViewModel, DB: ViewDataBinding>: AppCompatA
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        BaseViewModel::class.java
         viewModel = ViewModelProvider(this)[getViewModelClass()]
         dataBinding = DataBindingUtil.setContentView(this, getLayout())
+    }
+
+    /**
+     * This is common method to replace a fragment inside the provided container view id.
+     * @param containerViewId Id of container frame layout view
+     * @param fragment Fragment object to be replaced
+     */
+    protected fun replaceFragment(
+        containerViewId: Int,
+        fragment: Fragment
+    ) {
+        supportFragmentManager.beginTransaction().apply {
+            replace(containerViewId, fragment)
+            commit()
+        }
     }
 }
