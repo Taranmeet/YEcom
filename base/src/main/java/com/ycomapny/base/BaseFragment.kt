@@ -30,7 +30,6 @@ abstract class BaseFragment<VM : BaseViewModel, DB: ViewDataBinding>: Fragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this)[getViewModelClass()]
-//        dataBinding = DataBindingUtil.setContentView(requireActivity(), getLayout())
     }
 
     override fun onCreateView(
@@ -38,7 +37,7 @@ abstract class BaseFragment<VM : BaseViewModel, DB: ViewDataBinding>: Fragment()
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding = DataBindingUtil.inflate(inflater, getLayout(), container, false )
+        dataBinding = DataBindingUtil.inflate(inflater, getLayout(), container, false)
         super.onCreateView(inflater, container, savedInstanceState)
         return dataBinding.root
     }
