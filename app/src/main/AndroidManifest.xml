@@ -29,11 +29,11 @@
         <activity
             android:name=".dashboard.DashboardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.YEcom_noactionbar" />
+            android:theme="@style/Theme.YEcom" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.YEcom"></activity>
+            android:theme="@style/Theme.YEcom"/>
     </application>
 
 </manifest>

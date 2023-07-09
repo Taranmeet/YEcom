@@ -9,4 +9,9 @@
     <string name="new_user_sign_up">New user sign up</string>
     <string name="register">Register</string>
     <string name="re_enter_password">Re-enter Password</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="saved_cards">saved Cards</string>
+    <string name="profile">Profile</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
