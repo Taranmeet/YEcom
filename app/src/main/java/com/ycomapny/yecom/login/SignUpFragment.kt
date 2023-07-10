@@ -1,6 +1,7 @@
 package com.ycomapny.yecom.login
 
 import android.os.Bundle
+import android.view.View
 import com.ycomapny.base.BaseFragment
 import com.ycomapny.yecom.R
 import com.ycomapny.yecom.databinding.FragmentSignUpBinding
@@ -17,6 +18,11 @@ class SignUpFragment private constructor(): BaseFragment<SignUpViewModel, Fragme
                 arguments = bundle
             }
         }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        dataBinding.viewModel = viewModel
     }
 
 
